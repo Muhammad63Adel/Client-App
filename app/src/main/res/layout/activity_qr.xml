@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".qr"
+    android:background="@drawable/rounded_page">
+
+
+    <TextView
+        android:id="@+id/recv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_page"
+        android:padding="5dp"
+        android:text="generated"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+
+        />
+    <TextView
+        android:id="@+id/result_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:padding="5dp"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="result"
+        android:layout_below="@id/recv_message"
+        />
+    <ImageView
+        android:id="@+id/status_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/result_message"
+        android:visibility="gone"
+
+        />
+    <ImageView
+        android:id="@+id/qr_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/status_image"
+        android:background="@drawable/rounded_page"
+
+
+        />
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_shape"
+        android:text=" check the product "
+        android:layout_alignParentBottom="true"
+        android:layout_margin="50dp"
+        android:textAllCaps="false"
+        android:onClick="check_product"
+        />
+</RelativeLayout>

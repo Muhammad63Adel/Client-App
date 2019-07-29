@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".qr"
+    android:background="@drawable/rounded_page">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_marginTop="40dp"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/red_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/text_border"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/circle_shape_red" />
+
+                <TextView
+                    android:id="@+id/text_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/circle_shape_green" />
+
+                <TextView
+                    android:id="@+id/text_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#00FF00"
+                    android:textSize="40dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/yellow_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/circle_shape_blue" />
+
+                <TextView
+                    android:id="@+id/text_yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00"
+                    android:textSize="40dp" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+    <ImageView
+        android:id="@+id/status_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/check_button"
+        android:visibility="gone"
+
+        />
+    <TextView
+        android:id="@+id/congratulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="congratulation"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:layout_below="@id/status_image"
+        android:textSize="25dp"
+        android:visibility="gone"
+
+        />
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_shape"
+        android:text=" press here to check your order "
+        android:layout_alignParentBottom="true"
+        android:layout_margin="50dp"
+        android:textAllCaps="false"
+        android:onClick="check_product"
+        />
+</RelativeLayout>
